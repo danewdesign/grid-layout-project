@@ -1,0 +1,90 @@
+/********************* TAG SELECTORS ********************/
+body {
+  background-color: #FDCD6D;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}
+
+h1, h3 {
+  font-family: 'Kaushan Script', cursive;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+/************** HEADER AND NAVBAR STYLING *********************/
+.header {
+  color: #342609;
+  background-color: #FBA90A;
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  padding: 75px;
+}
+
+.navbar {
+  background-color: #9C6902;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.navbar a {
+  color: #342609;
+  display: block;
+  font-weight: bold;
+  padding: 13px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #FEF3DC;
+}
+
+/***************** CONTENT GRID LAYOUT STYLING **************/
+.item1 {grid-column: 1 / span 2;}
+.item2 {grid-column: 1 / span 2; grid-row: 2 / span 1;}
+.item3 {grid-column: 3 / span 2; grid-row: 1 / span 2;}
+.item4 {grid-column: 1 / span 4;}
+.item5 {grid-column: 1 / span 4;}
+
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1198px) {
+  .item1 {grid-column: 1 / span 4; grid-row: 1;}
+  .item2 {grid-column: 1 / span 4; grid-row: 2;}
+  .item3 {grid-column: 1 / span 4; grid-row: 3;}
+  .item4 {grid-column: 1 / span 4; grid-row: 4;}
+  .item5 {grid-column: 1 / span 4; grid-row: 5;}
+}
+
+.grid-container > div {
+  background-color: #FEF3DC;
+  padding: 15px;
+}
+
+.item3 > p {
+  column-count: 2;
+}
+
+.item4 > p {
+  column-count: 3;
+}
+
+/****************** FOOTER STYLING *********************/
+.footer {
+  background-color: #9C6902;
+  display: flex;
+  justify-content: center;
+  padding: 35px;
+}
